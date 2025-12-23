@@ -126,40 +126,34 @@ export default function AboutPage() {
 
           {/* CEO Section */}
           <div className="glass p-12 rounded-3xl">
-            <div className="grid md:grid-cols-3 gap-8 items-center">
-              <div className="md:col-span-1">
-                <div className="relative group">
-                  <img
-                    src="/images/4.jpg"
-                    alt="Mohsin Zaid - CEO & Founder - E-Commerce & Digital Marketing Expert"
-                    className="w-48 h-48 mx-auto rounded-full object-cover border-4 border-primary/20 shadow-lg"
-                    title="Mohsin Zaid - CEO & Founder - E-Commerce & Digital Marketing Expert"
-                    loading="lazy"
-                    width={192}
-                    height={192}
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement
-                      target.src = "/images/4.jpg"
-                    }}
-                  />
-                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block w-64 p-3 bg-background/95 backdrop-blur-sm rounded-lg shadow-lg border border-border z-50">
-                    <div className="text-sm font-semibold mb-1">Mohsin Zaid - CEO & Founder - E-Commerce & Digital Marketing Expert</div>
-                    <div className="text-xs text-muted-foreground">Visionary leader with over a decade of experience in e-commerce solutions, web development, SEO optimization, and digital marketing, driving BymzTech's mission to empower businesses worldwide with cutting-edge digital services.</div>
-                  </div>
-                </div>
-              </div>
-              <div className="md:col-span-2">
-                <h3 className="text-3xl font-bold mb-2">Mohsin Zaid</h3>
-                <p className="text-primary mb-4">CEO & Founder</p>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  With over a decade of experience in digital marketing and e-commerce, Mohsin founded BymzTech with a
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-primary mb-2 font-semibold text-lg">CEO</p>
+                <h3 className="text-4xl md:text-5xl font-bold mb-6">Sher Zaman</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4 text-lg">
+                  With over a decade of experience in digital marketing and e-commerce, Sher Zaman founded BymzTech with a
                   vision to help businesses thrive in the digital world. His expertise spans across multiple domains
                   including e-commerce strategy, digital marketing, and business development.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-lg">
                   Under his leadership, BymzTech has grown to become a trusted partner for businesses looking to scale
                   their operations and achieve sustainable growth in the competitive digital landscape.
                 </p>
+              </div>
+              <div className="relative">
+                <div className="relative group">
+                  <img
+                    src="/images/ceo.jpg"
+                    alt="Sher Zaman - CEO"
+                    className="w-full max-w-md mx-auto rounded-2xl object-cover shadow-xl"
+                    title="Sher Zaman - CEO"
+                    loading="lazy"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement
+                      target.src = "/images/ceo.jpg"
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
