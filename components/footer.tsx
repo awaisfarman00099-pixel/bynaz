@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/logo.png" 
+                src="/logo/logo.png" 
                 alt="BYZ AMAN E-COMMERCE AGENCY" 
                 className="h-10 w-auto"
               />
@@ -128,28 +128,6 @@ export default function Footer() {
                 <span>Faisalabad, Pakistan</span>
               </li>
             </ul>
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className="mt-12 pt-8 border-t border-border/50">
-          <div className="max-w-md mx-auto text-center">
-            <h3 className="text-lg font-semibold mb-2">Stay Updated!</h3>
-            <p className="text-muted-foreground mb-4">
-              Get the latest insights, tips, and exclusive offers delivered to your inbox.
-            </p>
-            <div className="flex justify-center">
-              <Button
-                asChild
-                size="lg"
-                className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                <a href="https://calendly.com/famdispatchingllc/30min" target="_blank" rel="noopener noreferrer">
-                  Start Meeting
-                </a>
-              </Button>
-            </div>
-            <p className="text-xs text-muted-foreground mt-3">We respect your privacy. Unsubscribe at any time.</p>
           </div>
         </div>
 

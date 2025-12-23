@@ -6,7 +6,7 @@ import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
 import { Button } from "@/components/ui/button"
-import { Calendar } from "lucide-react"
+import { Calendar, MessageCircle } from "lucide-react"
 
 declare global {
   interface Window {
@@ -69,12 +69,38 @@ export default function ContactPage() {
           </div>
 
           {/* Embedded Calendly Widget */}
-          <div className="glass p-8 rounded-3xl max-w-6xl mx-auto">
+          <div className="glass p-8 rounded-3xl max-w-6xl mx-auto mb-16">
             <div 
               className="calendly-inline-widget" 
               data-url={calendlyUrl} 
               style={{ minWidth: '320px', height: '700px' }}
             ></div>
+          </div>
+
+          {/* WhatsApp Link */}
+          <div className="max-w-4xl mx-auto">
+            <div className="glass p-10 rounded-3xl hover:scale-[1.02] transition-all duration-300 glow-secondary">
+              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center mb-6 mx-auto">
+                <MessageCircle size={36} className="text-white" />
+              </div>
+              <h2 className="text-3xl font-bold mb-4 text-center">Chat with Us</h2>
+              <p className="text-muted-foreground mb-8 text-center leading-relaxed max-w-2xl mx-auto">
+                Prefer to chat? Send us a message on WhatsApp and we'll get back to you as soon as possible.
+              </p>
+              <div className="flex justify-center">
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="bg-transparent hover:border-secondary hover:text-secondary transition-all px-8 py-6 text-lg"
+                >
+                  <a href="https://wa.me/14404907685" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-2" size={20} />
+                    WhatsApp Us
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

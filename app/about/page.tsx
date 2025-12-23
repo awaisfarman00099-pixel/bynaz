@@ -1,3 +1,5 @@
+"use client"
+
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
@@ -42,8 +44,22 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="relative">
-              <div className="glass p-8 rounded-3xl">
-                <img src="/modern-office-workspace-team-collaboration.jpg" alt="BymzTech Team" className="rounded-2xl w-full" />
+              <div className="glass p-8 rounded-3xl group/image">
+                <img 
+                  src="/images/20.jpg" 
+                  alt="Digital Agency Team - E-Commerce, Web Development & SEO Services" 
+                  title="Digital Agency Team - E-Commerce, Web Development & SEO Services"
+                  className="rounded-2xl w-full relative"
+                  loading="lazy"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement
+                    target.src = "/images/20.jpg"
+                  }}
+                />
+                <div className="absolute bottom-8 left-8 right-8 p-4 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity rounded-xl">
+                  <div className="text-sm font-semibold mb-1">Digital Agency Team - E-Commerce, Web Development & SEO Services</div>
+                  <div className="text-xs text-muted-foreground">Our expert team specializes in e-commerce solutions, web development, SEO optimization, and digital marketing services to help businesses succeed online and achieve their growth goals.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -112,8 +128,24 @@ export default function AboutPage() {
           <div className="glass p-12 rounded-3xl">
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
-                <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-6xl font-bold glow-primary">
-                  MZ
+                <div className="relative group">
+                  <img
+                    src="/images/4.jpg"
+                    alt="Mohsin Zaid - CEO & Founder - E-Commerce & Digital Marketing Expert"
+                    className="w-48 h-48 mx-auto rounded-full object-cover border-4 border-primary/20 shadow-lg"
+                    title="Mohsin Zaid - CEO & Founder - E-Commerce & Digital Marketing Expert"
+                    loading="lazy"
+                    width={192}
+                    height={192}
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement
+                      target.src = "/images/4.jpg"
+                    }}
+                  />
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block w-64 p-3 bg-background/95 backdrop-blur-sm rounded-lg shadow-lg border border-border z-50">
+                    <div className="text-sm font-semibold mb-1">Mohsin Zaid - CEO & Founder - E-Commerce & Digital Marketing Expert</div>
+                    <div className="text-xs text-muted-foreground">Visionary leader with over a decade of experience in e-commerce solutions, web development, SEO optimization, and digital marketing, driving BymzTech's mission to empower businesses worldwide with cutting-edge digital services.</div>
+                  </div>
                 </div>
               </div>
               <div className="md:col-span-2">

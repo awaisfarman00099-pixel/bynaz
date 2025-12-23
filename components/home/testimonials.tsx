@@ -11,6 +11,9 @@ const testimonials = [
     content:
       "BymzTech transformed my Shopify store into a revenue-generating machine. Their attention to detail and marketing expertise is unmatched. Sales increased by 300% in just 3 months!",
     rating: 5,
+    image: "/images/1.jpg",
+    imageTitle: "E-Commerce Store Optimization Services - Shopify Development",
+    imageDescription: "Professional e-commerce store optimization and Shopify development services delivering 300% sales growth through expert store setup, product optimization, and conversion rate improvements.",
   },
   {
     name: "John Reynolds",
@@ -18,6 +21,9 @@ const testimonials = [
     content:
       "Working with BymzTech has been a game-changer for our digital presence. Their SEO strategies and social media campaigns delivered results beyond our expectations.",
     rating: 5,
+    image: "/images/2.jpg",
+    imageTitle: "SEO & Digital Marketing Services - Search Engine Optimization",
+    imageDescription: "Comprehensive SEO and digital marketing services including search engine optimization, social media marketing, and content strategy to drive organic traffic and improve online visibility.",
   },
   {
     name: "Fatima Noor",
@@ -25,6 +31,9 @@ const testimonials = [
     content:
       "Professional, creative, and results-driven. The team at BymzTech helped us scale from a local business to serving customers across multiple countries. Highly recommended!",
     rating: 5,
+    image: "/images/3.jpg",
+    imageTitle: "Web Development & E-Commerce Solutions - Global Business Growth",
+    imageDescription: "Custom web development and e-commerce solutions enabling businesses to scale internationally through responsive website design, multi-platform integration, and digital transformation services.",
   },
 ]
 
@@ -81,9 +90,30 @@ export default function Testimonials() {
               </p>
 
               {/* Author */}
-              <div>
-                <div className="font-semibold text-xl gradient-text">{testimonials[currentIndex].name}</div>
-                <div className="text-muted-foreground">{testimonials[currentIndex].role}</div>
+              <div className="flex items-center justify-center gap-4">
+                <div className="relative group">
+                  <img
+                    src={testimonials[currentIndex].image || "/images/1.jpg"}
+                    alt={testimonials[currentIndex].name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
+                    title={testimonials[currentIndex].imageTitle}
+                    loading="lazy"
+                    width={64}
+                    height={64}
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement
+                      target.src = "/images/1.jpg"
+                    }}
+                  />
+                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block w-64 p-3 bg-background/95 backdrop-blur-sm rounded-lg shadow-lg border border-border z-50">
+                    <div className="text-sm font-semibold mb-1">{testimonials[currentIndex].imageTitle}</div>
+                    <div className="text-xs text-muted-foreground">{testimonials[currentIndex].imageDescription}</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="font-semibold text-xl gradient-text">{testimonials[currentIndex].name}</div>
+                  <div className="text-muted-foreground">{testimonials[currentIndex].role}</div>
+                </div>
               </div>
             </div>
 

@@ -1,3 +1,5 @@
+"use client"
+
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
@@ -40,12 +42,22 @@ export default function BlogPostPage() {
             </div>
 
             {/* Featured Image */}
-            <div className="aspect-video rounded-3xl overflow-hidden mb-12">
+            <div className="aspect-video rounded-3xl overflow-hidden mb-12 relative group/image bg-muted/20">
               <img
-                src="/business-management-digital.jpg"
-                alt="Business Management"
+                src="/images/14.jpg"
+                alt="E-Commerce Management Services"
+                title="E-Commerce Management Services - Shopify & Amazon Store Optimization"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement
+                  target.src = "/images/14.jpg"
+                }}
               />
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity rounded-b-3xl">
+                <div className="text-sm font-semibold mb-1">E-Commerce Management Services - Shopify & Amazon Store Optimization</div>
+                <div className="text-xs text-muted-foreground">Professional e-commerce management services including Shopify store management, Amazon FBA optimization, inventory control, order processing, and customer service solutions for online businesses.</div>
+              </div>
             </div>
 
             {/* Share Buttons */}

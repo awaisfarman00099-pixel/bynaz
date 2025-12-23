@@ -16,7 +16,9 @@ const blogPosts = [
     title: "Great ideas for business managing process",
     excerpt:
       "Discover proven strategies to streamline your business operations and maximize productivity with modern management techniques that actually work.",
-    image: "/business-management-digital.jpg",
+    image: "/images/14.jpg",
+    imageTitle: "E-Commerce Management Services - Shopify & Amazon Store Optimization",
+    imageDescription: "Professional e-commerce management services including Shopify store management, Amazon FBA optimization, inventory control, order processing, and customer service solutions for online businesses.",
     date: "Dec 15, 2024",
     readTime: "5 min read",
     category: "Marketing",
@@ -27,7 +29,9 @@ const blogPosts = [
     title: "Building effective plans for marketing strategy",
     excerpt:
       "Learn how to create data-driven marketing strategies that deliver measurable results and sustainable growth for your business in today's competitive landscape.",
-    image: "/marketing-strategy-planning.png",
+    image: "/images/15.jpg",
+    imageTitle: "Digital Marketing Strategy Services - SEO, PPC & Content Marketing",
+    imageDescription: "Comprehensive digital marketing strategy services including SEO optimization, pay-per-click advertising, content marketing, email campaigns, and analytics to drive business growth and maximize ROI.",
     date: "Dec 10, 2024",
     readTime: "7 min read",
     category: "Marketing",
@@ -38,7 +42,9 @@ const blogPosts = [
     title: "Boosting social media for enhancing business",
     excerpt:
       "Master social media marketing tactics that increase engagement, build brand awareness, and drive conversions across all major platforms.",
-    image: "/social-media-marketing.png",
+    image: "/images/16.jpg",
+    imageTitle: "Social Media Marketing Services - Facebook, Instagram & TikTok Management",
+    imageDescription: "Expert social media marketing services including content creation, community management, influencer marketing, paid advertising, and performance analytics across Facebook, Instagram, TikTok, and LinkedIn.",
     date: "Dec 5, 2024",
     readTime: "6 min read",
     category: "Social Media",
@@ -49,7 +55,9 @@ const blogPosts = [
     title: "E-Commerce optimization strategies for 2025",
     excerpt:
       "Stay ahead of the competition with cutting-edge e-commerce optimization techniques that boost conversions and increase average order value.",
-    image: "/ecommerce-optimization-strategies.jpg",
+    image: "/images/17.jpg",
+    imageTitle: "E-Commerce Optimization Services - Conversion Rate & Store Performance",
+    imageDescription: "Advanced e-commerce optimization services including conversion rate optimization, checkout process improvement, product page optimization, cart abandonment recovery, and A/B testing for maximum sales.",
     date: "Dec 1, 2024",
     readTime: "8 min read",
     category: "E-Commerce",
@@ -60,7 +68,9 @@ const blogPosts = [
     title: "SEO best practices that actually work",
     excerpt:
       "Cut through the noise and learn the SEO tactics that deliver real results, from technical optimization to content strategy and link building.",
-    image: "/seo-best-practices.png",
+    image: "/images/18.jpg",
+    imageTitle: "SEO Services - Search Engine Optimization & Organic Traffic Growth",
+    imageDescription: "Professional SEO services including keyword research, on-page SEO, technical SEO, link building, local SEO, and content optimization to improve search rankings and drive organic traffic to your website.",
     date: "Nov 28, 2024",
     readTime: "9 min read",
     category: "SEO",
@@ -71,12 +81,170 @@ const blogPosts = [
     title: "Modern web design trends for businesses",
     excerpt:
       "Explore the latest web design trends that combine aesthetics with functionality to create websites that convert visitors into customers.",
-    image: "/web-design-trends.jpg",
+    image: "/images/19.jpg",
+    imageTitle: "Web Design & Development Services - Modern Website Solutions",
+    imageDescription: "Cutting-edge web design and development services including responsive design, UI/UX optimization, custom website development, mobile-first design, and performance optimization for modern businesses.",
     date: "Nov 25, 2024",
     readTime: "6 min read",
     category: "Web Development",
     author: "Mohsin Zaid",
     href: "/blog/web-design-trends",
+  },
+  {
+    title: "Amazon FBA product optimization guide",
+    excerpt:
+      "Learn the proven strategies for optimizing Amazon product listings to maximize visibility, conversions, and sales.",
+    image: "/images/41.jpg",
+    imageTitle: "Amazon FBA Services - Product Listing Optimization Guide",
+    imageDescription: "Complete guide to Amazon FBA product optimization including keyword research, listing optimization, image optimization, A+ content creation, and review management strategies.",
+    date: "Nov 20, 2024",
+    readTime: "10 min read",
+    category: "E-Commerce",
+    author: "Mohsin Zaid",
+    href: "/blog/amazon-fba-optimization",
+  },
+  {
+    title: "Shopify store conversion optimization",
+    excerpt:
+      "Discover techniques to improve your Shopify store's conversion rate and turn more visitors into paying customers.",
+    image: "/images/42.jpg",
+    imageTitle: "Shopify Store Optimization Services - Conversion Rate Improvement",
+    imageDescription: "Expert Shopify store conversion optimization techniques including checkout optimization, product page improvements, trust signals, mobile optimization, and A/B testing strategies.",
+    date: "Nov 15, 2024",
+    readTime: "8 min read",
+    category: "E-Commerce",
+    author: "Mohsin Zaid",
+    href: "/blog/shopify-conversion",
+  },
+  {
+    title: "Local SEO strategies for small businesses",
+    excerpt:
+      "Master local SEO tactics that help small businesses dominate local search results and attract nearby customers.",
+    image: "/images/43.jpg",
+    imageTitle: "Local SEO Services - Small Business Search Optimization",
+    imageDescription: "Comprehensive local SEO strategies for small businesses including Google Business Profile optimization, local citations, review management, and local content marketing to dominate local search.",
+    date: "Nov 10, 2024",
+    readTime: "7 min read",
+    category: "SEO",
+    author: "Mohsin Zaid",
+    href: "/blog/local-seo-small-business",
+  },
+  {
+    title: "Social media content calendar planning",
+    excerpt:
+      "Create an effective social media content calendar that keeps your audience engaged and drives consistent results.",
+    image: "/images/44.jpg",
+    imageTitle: "Social Media Marketing Services - Content Calendar Strategy",
+    imageDescription: "Professional social media content calendar planning including content strategy, posting schedules, content mix, engagement tactics, and analytics tracking for consistent social media success.",
+    date: "Nov 5, 2024",
+    readTime: "6 min read",
+    category: "Social Media",
+    author: "Mohsin Zaid",
+    href: "/blog/social-media-calendar",
+  },
+  {
+    title: "E-commerce email marketing campaigns",
+    excerpt:
+      "Build high-converting email marketing campaigns that recover abandoned carts and drive repeat purchases.",
+    image: "/images/45.jpg",
+    imageTitle: "E-Commerce Email Marketing Services - Campaign Strategy",
+    imageDescription: "Advanced e-commerce email marketing strategies including abandoned cart recovery, welcome series, product recommendations, segmentation, and automation workflows to maximize email ROI.",
+    date: "Nov 1, 2024",
+    readTime: "9 min read",
+    category: "Marketing",
+    author: "Mohsin Zaid",
+    href: "/blog/email-marketing-ecommerce",
+  },
+  {
+    title: "Technical SEO audit checklist",
+    excerpt:
+      "Complete technical SEO audit checklist to identify and fix issues that may be hurting your search rankings.",
+    image: "/images/46.jpg",
+    imageTitle: "Technical SEO Services - Comprehensive Audit Checklist",
+    imageDescription: "Detailed technical SEO audit checklist including site speed optimization, mobile responsiveness, crawlability, indexation, structured data, and security checks for improved search performance.",
+    date: "Oct 28, 2024",
+    readTime: "12 min read",
+    category: "SEO",
+    author: "Mohsin Zaid",
+    href: "/blog/technical-seo-audit",
+  },
+  {
+    title: "Responsive web design best practices",
+    excerpt:
+      "Learn the essential responsive web design principles that ensure your site works perfectly on all devices.",
+    image: "/images/47.jpg",
+    imageTitle: "Web Design Services - Responsive Design Best Practices",
+    imageDescription: "Essential responsive web design best practices including mobile-first approach, flexible layouts, media queries, touch-friendly interfaces, and performance optimization for all devices.",
+    date: "Oct 25, 2024",
+    readTime: "7 min read",
+    category: "Web Development",
+    author: "Mohsin Zaid",
+    href: "/blog/responsive-web-design",
+  },
+  {
+    title: "PPC campaign optimization strategies",
+    excerpt:
+      "Optimize your PPC campaigns to reduce costs while increasing conversions and return on ad spend.",
+    image: "/images/48.jpg",
+    imageTitle: "PPC Marketing Services - Campaign Optimization Strategies",
+    imageDescription: "Advanced PPC campaign optimization strategies including keyword research, bid management, ad copy testing, landing page optimization, and conversion tracking to maximize ROI on Google Ads and Facebook Ads.",
+    date: "Oct 20, 2024",
+    readTime: "8 min read",
+    category: "Marketing",
+    author: "Mohsin Zaid",
+    href: "/blog/ppc-optimization",
+  },
+  {
+    title: "Content marketing for e-commerce",
+    excerpt:
+      "Develop a content marketing strategy that drives organic traffic and builds authority in your niche.",
+    image: "/images/49.jpg",
+    imageTitle: "Content Marketing Services - E-Commerce Content Strategy",
+    imageDescription: "Comprehensive content marketing strategies for e-commerce including blog content, product descriptions, video content, user-generated content, and content distribution to drive organic traffic and sales.",
+    date: "Oct 15, 2024",
+    readTime: "9 min read",
+    category: "Marketing",
+    author: "Mohsin Zaid",
+    href: "/blog/content-marketing-ecommerce",
+  },
+  {
+    title: "Shopify apps to boost sales",
+    excerpt:
+      "Discover the essential Shopify apps that can help you increase conversions and automate your store operations.",
+    image: "/images/50.jpg",
+    imageTitle: "Shopify Store Optimization - Essential Apps for Sales Growth",
+    imageDescription: "Top Shopify apps for boosting sales including conversion optimization apps, email marketing tools, review apps, upselling plugins, and automation tools to maximize store performance.",
+    date: "Oct 10, 2024",
+    readTime: "6 min read",
+    category: "E-Commerce",
+    author: "Mohsin Zaid",
+    href: "/blog/shopify-apps-sales",
+  },
+  {
+    title: "Link building strategies for SEO",
+    excerpt:
+      "Build high-quality backlinks using ethical link building strategies that improve your search rankings.",
+    image: "/images/51.jpg",
+    imageTitle: "SEO Services - Link Building Strategies & Techniques",
+    imageDescription: "Professional link building strategies including guest posting, broken link building, resource page outreach, HARO, and relationship building to acquire high-quality backlinks for improved SEO rankings.",
+    date: "Oct 5, 2024",
+    readTime: "11 min read",
+    category: "SEO",
+    author: "Mohsin Zaid",
+    href: "/blog/link-building-seo",
+  },
+  {
+    title: "E-commerce inventory management",
+    excerpt:
+      "Streamline your inventory management processes to reduce costs and prevent stockouts or overstocking.",
+    image: "/images/52.jpg",
+    imageTitle: "E-Commerce Management Services - Inventory Control Solutions",
+    imageDescription: "Complete e-commerce inventory management solutions including stock tracking, automated reordering, multi-warehouse management, demand forecasting, and inventory optimization for efficient operations.",
+    date: "Oct 1, 2024",
+    readTime: "8 min read",
+    category: "E-Commerce",
+    author: "Mohsin Zaid",
+    href: "/blog/inventory-management",
   },
 ]
 
@@ -147,12 +315,22 @@ export default function BlogPage() {
             >
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Image */}
-                <div className="aspect-video md:aspect-auto overflow-hidden">
+                <div className="aspect-video md:aspect-auto overflow-hidden relative group/image bg-muted/20">
                   <img
-                    src={filteredPosts[0].image || "/placeholder.svg"}
+                    src={filteredPosts[0].image || "/images/14.jpg"}
                     alt={filteredPosts[0].title}
+                    title={filteredPosts[0].imageTitle}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement
+                      target.src = "/images/14.jpg"
+                    }}
                   />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity">
+                    <div className="text-sm font-semibold mb-1">{filteredPosts[0].imageTitle}</div>
+                    <div className="text-xs text-muted-foreground">{filteredPosts[0].imageDescription}</div>
+                  </div>
                 </div>
 
                 {/* Content */}
@@ -188,12 +366,22 @@ export default function BlogPage() {
                 className="group glass rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300"
               >
                 {/* Image */}
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden relative group/image bg-muted/20">
                   <img
-                    src={post.image || "/placeholder.svg"}
+                    src={post.image || "/images/14.jpg"}
                     alt={post.title}
+                    title={post.imageTitle}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement
+                      target.src = "/images/14.jpg"
+                    }}
                   />
+                  <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity">
+                    <div className="text-xs font-semibold mb-1">{post.imageTitle}</div>
+                    <div className="text-xs text-muted-foreground line-clamp-2">{post.imageDescription}</div>
+                  </div>
                 </div>
 
                 {/* Content */}

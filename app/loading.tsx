@@ -5,7 +5,7 @@ export default function Loading() {
         {/* Animated Logo */}
         <div className="w-24 h-24 flex items-center justify-center animate-pulse">
           <img 
-            src="/logo.png" 
+            src="/logo/logo.png" 
             alt="BYZ AMAN E-COMMERCE AGENCY" 
             className="h-20 w-auto"
           />

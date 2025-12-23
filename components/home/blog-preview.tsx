@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight, Clock, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -7,7 +9,9 @@ const blogPosts = [
     title: "Great ideas for business managing process",
     excerpt:
       "Discover proven strategies to streamline your business operations and maximize productivity with modern management techniques.",
-    image: "/business-management-digital.jpg",
+    image: "/images/5.jpg",
+    imageTitle: "E-Commerce Business Management Services - Shopify & Amazon Optimization",
+    imageDescription: "Comprehensive e-commerce business management services including Shopify store management, Amazon FBA optimization, inventory management, and order fulfillment solutions to streamline operations.",
     date: "Dec 15, 2024",
     readTime: "5 min read",
     href: "/blog/business-managing-process",
@@ -16,7 +20,9 @@ const blogPosts = [
     title: "Building effective plans for marketing strategy",
     excerpt:
       "Learn how to create data-driven marketing strategies that deliver measurable results and sustainable growth for your business.",
-    image: "/marketing-strategy-planning.png",
+    image: "/images/6.jpg",
+    imageTitle: "Digital Marketing Strategy Services - SEO & Content Marketing",
+    imageDescription: "Expert digital marketing strategy services including SEO optimization, content marketing, email campaigns, and performance analytics to drive sustainable business growth and ROI.",
     date: "Dec 10, 2024",
     readTime: "7 min read",
     href: "/blog/marketing-strategy",
@@ -25,7 +31,9 @@ const blogPosts = [
     title: "Boosting social media for enhancing business",
     excerpt:
       "Master social media marketing tactics that increase engagement, build brand awareness, and drive conversions across all platforms.",
-    image: "/social-media-marketing.png",
+    image: "/images/7.jpg",
+    imageTitle: "Social Media Marketing Services - Brand Building & Engagement",
+    imageDescription: "Professional social media marketing services for Facebook, Instagram, TikTok, and LinkedIn including content creation, community management, influencer partnerships, and campaign optimization.",
     date: "Dec 5, 2024",
     readTime: "6 min read",
     href: "/blog/social-media-business",
@@ -53,12 +61,22 @@ export default function BlogPreview() {
               className="group glass rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300"
             >
               {/* Image */}
-              <div className="aspect-video overflow-hidden">
+              <div className="aspect-video overflow-hidden relative group/image bg-muted/20">
                 <img
-                  src={post.image || "/placeholder.svg"}
+                  src={post.image || "/images/5.jpg"}
                   alt={post.title}
+                  title={post.imageTitle}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement
+                    target.src = "/images/5.jpg"
+                  }}
                 />
+                <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity">
+                  <div className="text-xs font-semibold mb-1">{post.imageTitle}</div>
+                  <div className="text-xs text-muted-foreground line-clamp-2">{post.imageDescription}</div>
+                </div>
               </div>
 
               {/* Content */}

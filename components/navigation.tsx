@@ -36,9 +36,9 @@ export default function Navigation() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/">
               <img 
-                src="/logo.png" 
+                src="/logo/logo.png" 
                 alt="BYZ AMAN E-COMMERCE AGENCY" 
                 className="h-12 w-auto"
               />
