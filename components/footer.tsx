@@ -10,10 +10,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-bold text-xl glow-primary">
-                B
-              </div>
-              <span className="text-2xl font-bold gradient-text">BymzTech</span>
+              <img 
+                src="/logo.png" 
+                alt="BYZ AMAN E-COMMERCE AGENCY" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-muted-foreground leading-relaxed">
               Building your empire digitally with premium e-commerce and digital services worldwide.
@@ -118,8 +119,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone size={18} className="text-primary" />
-                <a href="tel:+923147860366" className="hover:text-primary transition-colors">
-                  +92-314-7860366
+                <a href="tel:+14404907685" className="hover:text-primary transition-colors">
+                  +1 (440) 490-7685
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
@@ -143,7 +144,7 @@ export default function Footer() {
                 size="lg"
                 className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                <a href="https://calendly.com/your-username" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/famdispatchingllc/30min" target="_blank" rel="noopener noreferrer">
                   Start Meeting
                 </a>
               </Button>

@@ -35,8 +35,8 @@ export default function FloatingCTA() {
                 <Link href="/contact">Contact Us</Link>
               </Button>
               <Button asChild size="sm" className="w-full bg-transparent" variant="outline">
-                <a href="https://wa.me/923147860366" target="_blank" rel="noopener noreferrer">
-                  WhatsApp
+                <a href="tel:+14404907685" target="_blank" rel="noopener noreferrer">
+                  Call Us
                 </a>
               </Button>
             </div>

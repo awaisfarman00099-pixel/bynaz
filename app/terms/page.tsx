@@ -88,7 +88,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-bold mb-4">8. Contact</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   For questions about these Terms and Conditions, please contact us at bymztech@gmail.com or
-                  +92-314-7860366.
+                  +1 (440) 490-7685.
                 </p>
               </div>
             </div>

@@ -37,10 +37,11 @@ export default function Navigation() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-bold text-xl glow-primary">
-                B
-              </div>
-              <span className="text-2xl font-bold gradient-text">BymzTech</span>
+              <img 
+                src="/logo.png" 
+                alt="BYZ AMAN E-COMMERCE AGENCY" 
+                className="h-12 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}

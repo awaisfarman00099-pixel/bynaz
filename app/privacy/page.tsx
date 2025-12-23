@@ -121,7 +121,7 @@ export default function PrivacyPage() {
                 <h2 className="text-2xl font-bold mb-4">8. Contact Us</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   If you have questions about this Privacy Policy, please contact us at bymztech@gmail.com or
-                  +92-314-7860366.
+                  +1 (440) 490-7685.
                 </p>
               </div>
             </div>

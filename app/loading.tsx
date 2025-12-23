@@ -3,8 +3,12 @@ export default function Loading() {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-background">
       <div className="relative">
         {/* Animated Logo */}
-        <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-bold text-4xl animate-pulse glow-primary">
-          B
+        <div className="w-24 h-24 flex items-center justify-center animate-pulse">
+          <img 
+            src="/logo.png" 
+            alt="BYZ AMAN E-COMMERCE AGENCY" 
+            className="h-20 w-auto"
+          />
         </div>
 
         {/* Loading Spinner */}
