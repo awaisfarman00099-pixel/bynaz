@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ShoppingCart, Store, Share2, Globe, Package, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import ImageModal from "@/components/image-modal"
 
 const services = [
   {
@@ -76,32 +77,43 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Link
+            <div
               key={index}
-              href={service.href}
-              className="group glass rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300"
+              className="group glass rounded-2xl overflow-hidden transition-all duration-500 ease-in-out flex flex-col hover:shadow-2xl hover:shadow-primary/20"
             >
               {/* Image */}
-              <div className="aspect-video overflow-hidden relative group/image bg-muted/20">
-                <img
+              <div className="aspect-video overflow-hidden relative bg-muted/20 group-hover:aspect-auto group-hover:h-auto group-hover:min-h-[600px] group-hover:flex-1 transition-all duration-700 ease-in-out cursor-pointer">
+                <ImageModal
                   src={service.image || "/images/21.jpg"}
                   alt={service.title}
                   title={service.imageTitle}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  loading="lazy"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement
-                    target.src = "/images/21.jpg"
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity">
-                  <div className="text-xs font-semibold mb-1">{service.imageTitle}</div>
-                  <div className="text-xs text-muted-foreground line-clamp-2">{service.imageDescription}</div>
-                </div>
+                  description={service.imageDescription}
+                >
+                  <div className="w-full h-full flex items-center justify-center p-2">
+                    <img
+                      src={service.image || "/images/21.jpg"}
+                      alt={service.title}
+                      title={service.imageTitle}
+                      className="w-full h-full object-cover group-hover:object-contain group-hover:h-full group-hover:w-full group-hover:max-w-full transition-all duration-700 ease-in-out group-hover:shadow-xl"
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = "/images/21.jpg"
+                      }}
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-100 group-hover:opacity-0 group-hover:pointer-events-none transition-opacity duration-300 ease-in-out">
+                      <div className="text-xs font-semibold mb-1">{service.imageTitle}</div>
+                      <div className="text-xs text-muted-foreground line-clamp-2">{service.imageDescription}</div>
+                    </div>
+                  </div>
+                </ImageModal>
               </div>
               
               {/* Content */}
-              <div className="p-8">
+              <Link
+                href={service.href}
+                className="p-8 group-hover:opacity-100 opacity-100 transition-opacity"
+              >
                 <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent to-secondary flex items-center justify-center mb-6 group-hover:glow-secondary transition-all">
                   <service.icon size={32} className="text-white" />
                 </div>
@@ -113,8 +125,8 @@ export default function Services() {
                 >
                   Learn More
                 </Button>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
 

@@ -5,6 +5,7 @@ import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
 import { Button } from "@/components/ui/button"
+import ImageModal from "@/components/image-modal"
 
 const categories = ["All", "E-Commerce", "Web Design", "SEO", "Social Media"]
 
@@ -150,16 +151,6 @@ const projects = [
     tags: ["E-Learning", "Video Streaming", "LMS"],
   },
   {
-    title: "Beauty Brand TikTok",
-    category: "Social Media",
-    description: "Viral TikTok campaign with trending challenges",
-    image: "/images/35.jpg",
-    imageTitle: "TikTok Marketing Services - Viral Campaign Management",
-    imageDescription: "Professional TikTok marketing services including viral content creation, hashtag challenges, influencer collaborations, TikTok Ads management, and trend-based campaigns for beauty brands.",
-    results: ["20M+ Views", "500K+ Followers", "Viral Content"],
-    tags: ["TikTok", "Viral", "Beauty"],
-  },
-  {
     title: "Dropshipping Store",
     category: "E-Commerce",
     description: "Automated dropshipping business with multiple suppliers",
@@ -279,26 +270,35 @@ export default function PortfolioPage() {
             {filteredProjects.map((project, index) => (
               <div
                 key={index}
-                className="group glass rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300"
+                className="group glass rounded-3xl overflow-hidden transition-all duration-500 ease-in-out flex flex-col hover:shadow-2xl hover:shadow-primary/20"
               >
-                {/* Image */}
-                <div className="aspect-video overflow-hidden bg-muted/20 relative group/image">
-                  <img
-                    src={project.image || "/images/8.jpg"}
-                    alt={project.title}
-                    title={project.imageTitle}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    loading="lazy"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement
-                      target.src = "/images/8.jpg"
-                    }}
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity">
-                    <div className="text-xs font-semibold mb-1">{project.imageTitle}</div>
-                    <div className="text-xs text-muted-foreground line-clamp-2">{project.imageDescription}</div>
+              {/* Image */}
+              <div className="aspect-video overflow-hidden bg-muted/20 relative group-hover:aspect-auto group-hover:h-auto group-hover:min-h-[600px] group-hover:flex-1 transition-all duration-700 ease-in-out cursor-pointer">
+                <ImageModal
+                  src={project.image || "/images/8.jpg"}
+                  alt={project.title}
+                  title={project.imageTitle}
+                  description={project.imageDescription}
+                >
+                  <div className="w-full h-full flex items-center justify-center p-2">
+                    <img
+                      src={project.image || "/images/8.jpg"}
+                      alt={project.title}
+                      title={project.imageTitle}
+                      className="w-full h-full object-cover group-hover:object-contain group-hover:h-full group-hover:w-full group-hover:max-w-full transition-all duration-700 ease-in-out group-hover:shadow-xl"
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = "/images/8.jpg"
+                      }}
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-100 group-hover:opacity-0 group-hover:pointer-events-none transition-opacity duration-300 ease-in-out">
+                      <div className="text-xs font-semibold mb-1">{project.imageTitle}</div>
+                      <div className="text-xs text-muted-foreground line-clamp-2">{project.imageDescription}</div>
+                    </div>
                   </div>
-                </div>
+                </ImageModal>
+              </div>
 
                 {/* Content */}
                 <div className="p-6">

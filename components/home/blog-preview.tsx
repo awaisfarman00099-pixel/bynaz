@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ArrowRight, Clock, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import ImageModal from "@/components/image-modal"
 
 const blogPosts = [
   {
@@ -55,32 +56,40 @@ export default function BlogPreview() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <Link
+            <div
               key={index}
-              href={post.href}
-              className="group glass rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300"
+              className="group glass rounded-2xl overflow-hidden transition-all duration-500 ease-in-out flex flex-col hover:shadow-2xl hover:shadow-primary/20"
             >
               {/* Image */}
-              <div className="aspect-video overflow-hidden relative group/image bg-muted/20">
-                <img
+              <div className="aspect-video overflow-hidden relative bg-muted/20 group-hover:aspect-auto group-hover:h-auto group-hover:min-h-[600px] group-hover:flex-1 transition-all duration-700 ease-in-out cursor-pointer">
+                <ImageModal
                   src={post.image || "/images/5.jpg"}
                   alt={post.title}
                   title={post.imageTitle}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  loading="lazy"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement
-                    target.src = "/images/5.jpg"
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-0 group-hover/image:opacity-100 transition-opacity">
-                  <div className="text-xs font-semibold mb-1">{post.imageTitle}</div>
-                  <div className="text-xs text-muted-foreground line-clamp-2">{post.imageDescription}</div>
-                </div>
+                  description={post.imageDescription}
+                >
+                  <div className="w-full h-full flex items-center justify-center p-2">
+                    <img
+                      src={post.image || "/images/5.jpg"}
+                      alt={post.title}
+                      title={post.imageTitle}
+                      className="w-full h-full object-cover group-hover:object-contain group-hover:h-full group-hover:w-full group-hover:max-w-full transition-all duration-700 ease-in-out group-hover:shadow-xl"
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = "/images/5.jpg"
+                      }}
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 p-3 bg-background/90 backdrop-blur-sm opacity-100 group-hover:opacity-0 group-hover:pointer-events-none transition-opacity duration-300 ease-in-out">
+                      <div className="text-xs font-semibold mb-1">{post.imageTitle}</div>
+                      <div className="text-xs text-muted-foreground line-clamp-2">{post.imageDescription}</div>
+                    </div>
+                  </div>
+                </ImageModal>
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <Link href={post.href} className="p-6">
                 {/* Meta */}
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                   <div className="flex items-center gap-1">
@@ -106,8 +115,8 @@ export default function BlogPreview() {
                   <span>Read More</span>
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
 
