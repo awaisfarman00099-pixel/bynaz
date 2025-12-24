@@ -40,7 +40,7 @@ export default function Navigation() {
               <img 
                 src="/logo/logo.png" 
                 alt="BYZ AMAN E-COMMERCE AGENCY" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
 
