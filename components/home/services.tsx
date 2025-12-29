@@ -166,7 +166,7 @@ export default function Services() {
                     <div className="relative w-full aspect-[5/6] bg-gradient-to-br from-muted/20 to-muted/5 overflow-hidden">
                       <img
                         src="/home/img.png"
-                        alt="Sher Zaman"
+                        alt="Mr. Zaman"
                         className="w-full h-full object-cover object-center"
                         loading="lazy"
                         onError={(e) => {
@@ -182,7 +182,7 @@ export default function Services() {
                         {/* Name and Title on Single Line */}
                         <div className="flex items-center justify-center gap-3 flex-wrap">
                           <h4 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
-                            Sher Zaman
+                            Mr. Zaman
                           </h4>
                           <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
                             <span className="text-xs font-bold text-primary uppercase tracking-widest">CEO</span>
@@ -197,7 +197,7 @@ export default function Services() {
                             className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                           >
                             <Calendar className="mr-2" size={20} />
-                            Meet Sher Zaman
+                            Meet Mr. Zaman
                           </Button>
                         </div>
                       </div>
