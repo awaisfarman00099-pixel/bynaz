@@ -114,18 +114,21 @@ export default function Footer() {
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail size={18} className="text-primary" />
                 <a href="mailto:bymztech@gmail.com" className="hover:text-primary transition-colors">
-                  bymztech@gmail.com
+                  info@ecombyzaman.com
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone size={18} className="text-primary" />
-                <a href="tel:+14404907685" className="hover:text-primary transition-colors">
+                <a href="https://wa.me/14404907685
+" className="hover:text-primary transition-colors">
                   +1 (440) 490-7685
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <MapPin size={18} className="text-primary" />
-                <span>Faisalabad, Pakistan</span>
+                <span>(830) 203-5261
+900 Robertson #APT 48
+Gonzales, Texas(TX), 78629</span>
               </li>
             </ul>
           </div>
