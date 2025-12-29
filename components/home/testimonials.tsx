@@ -9,7 +9,7 @@ const testimonials = [
     name: "Ayesha Malik",
     role: "E-Commerce Entrepreneur",
     content:
-      "BymzTech transformed my Shopify store into a revenue-generating machine. Their attention to detail and marketing expertise is unmatched. Sales increased by 300% in just 3 months!",
+      "Ecombyzaman transformed my Shopify store into a revenue-generating machine. Their attention to detail and marketing expertise is unmatched. Sales increased by 300% in just 3 months!",
     rating: 5,
     image: "/images/1.jpg",
     imageTitle: "E-Commerce Store Optimization Services - Shopify Development",
@@ -19,7 +19,7 @@ const testimonials = [
     name: "John Reynolds",
     role: "Marketing Director",
     content:
-      "Working with BymzTech has been a game-changer for our digital presence. Their SEO strategies and social media campaigns delivered results beyond our expectations.",
+      "Working with Ecombyzaman has been a game-changer for our digital presence. Their SEO strategies and social media campaigns delivered results beyond our expectations.",
     rating: 5,
     image: "/images/2.jpg",
     imageTitle: "SEO & Digital Marketing Services - Search Engine Optimization",
@@ -29,7 +29,7 @@ const testimonials = [
     name: "Fatima Noor",
     role: "Business Owner",
     content:
-      "Professional, creative, and results-driven. The team at BymzTech helped us scale from a local business to serving customers across multiple countries. Highly recommended!",
+      "Professional, creative, and results-driven. The team at Ecombyzaman helped us scale from a local business to serving customers across multiple countries. Highly recommended!",
     rating: 5,
     image: "/images/3.jpg",
     imageTitle: "Web Development & E-Commerce Solutions - Global Business Growth",

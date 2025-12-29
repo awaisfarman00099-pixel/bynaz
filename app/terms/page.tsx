@@ -19,7 +19,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">1. Acceptance of Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By accessing and using BymzTech's services, you agree to be bound by these Terms and Conditions. If
+                  By accessing and using Ecombyzaman's services, you agree to be bound by these Terms and Conditions. If
                   you disagree with any part of these terms, you may not use our services.
                 </p>
               </div>
@@ -27,7 +27,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">2. Services</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  BymzTech provides digital marketing, e-commerce management, web development, and related services. The
+                  Ecombyzaman provides digital marketing, e-commerce management, web development, and related services. The
                   specific scope of services will be outlined in individual service agreements or proposals.
                 </p>
               </div>
@@ -54,7 +54,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">4. Intellectual Property</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Upon full payment, clients own the final deliverables. BymzTech retains the right to showcase work in
+                  Upon full payment, clients own the final deliverables. Ecombyzaman retains the right to showcase work in
                   our portfolio unless otherwise agreed. Pre-existing materials and frameworks remain our property.
                 </p>
               </div>
@@ -70,7 +70,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">6. Limitation of Liability</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  BymzTech shall not be liable for any indirect, incidental, or consequential damages arising from the
+                  Ecombyzaman shall not be liable for any indirect, incidental, or consequential damages arising from the
                   use of our services. Our total liability is limited to the amount paid for services in the preceding
                   12 months.
                 </p>
@@ -87,7 +87,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">8. Contact</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  For questions about these Terms and Conditions, please contact us at bymztech@gmail.com or
+                  For questions about these Terms and Conditions, please contact us at ecombyzaman@gmail.com or
                   +1 (440) 490-7685.
                 </p>
               </div>

@@ -7,7 +7,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "BymzTech - Digital & E-Commerce Services Worldwide",
+  title: "Ecombyzaman - Digital & E-Commerce Services Worldwide",
   description:
     "Building your empire digitally with premium e-commerce brand management, web development, SEO, and social media marketing services.",
   generator: "v0.app",

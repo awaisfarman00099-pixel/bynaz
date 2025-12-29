@@ -223,7 +223,7 @@ export default function FAQPage() {
                 <Link href="/contact">Contact Us</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="glass bg-transparent">
-                <a href="mailto:bymztech@gmail.com">Email Us</a>
+                <a href="mailto:ecombyzaman@gmail.com">Email Us</a>
               </Button>
             </div>
           </div>

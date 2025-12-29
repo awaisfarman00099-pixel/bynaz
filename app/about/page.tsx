@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-20">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              About <span className="gradient-text">BymzTech</span>
+              About <span className="gradient-text">Ecombyzaman</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               We believe in building strategies that last. We believe in creating results that matter.
@@ -30,7 +30,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Founded with a vision to empower businesses in the digital age, BymzTech has grown from a small team of
+                Founded with a vision to empower businesses in the digital age, Ecombyzaman has grown from a small team of
                 passionate professionals to a leading digital agency serving clients worldwide.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -129,14 +129,14 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-primary mb-2 font-semibold text-lg">CEO</p>
-                <h3 className="text-4xl md:text-5xl font-bold mb-6">Sher Zaman</h3>
+                <h3 className="text-4xl md:text-5xl font-bold mb-6">Mr. Zaman</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4 text-lg">
-                  With over a decade of experience in digital marketing and e-commerce, Sher Zaman founded BymzTech with a
+                  With over a decade of experience in digital marketing and e-commerce, Mr. Zaman founded Ecombyzaman with a
                   vision to help businesses thrive in the digital world. His expertise spans across multiple domains
                   including e-commerce strategy, digital marketing, and business development.
                 </p>
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Under his leadership, BymzTech has grown to become a trusted partner for businesses looking to scale
+                  Under his leadership, Ecombyzaman has grown to become a trusted partner for businesses looking to scale
                   their operations and achieve sustainable growth in the competitive digital landscape.
                 </p>
               </div>

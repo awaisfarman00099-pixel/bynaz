@@ -113,7 +113,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail size={18} className="text-primary" />
-                <a href="mailto:bymztech@gmail.com" className="hover:text-primary transition-colors">
+                <a href="mailto:ecombyzaman@gmail.com" className="hover:text-primary transition-colors">
                   info@ecombyzaman.com
                 </a>
               </li>
@@ -136,7 +136,7 @@ Gonzales, Texas(TX), 78629</span>
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border/50 text-center text-muted-foreground">
-          <p>© 2025 digitly by Bymztech. All Rights Reserved.</p>
+          <p>© 2025 digitly by Ecombyzaman. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
