@@ -144,9 +144,9 @@ export default function AboutPage() {
                 <div className="relative group">
                   <img
                     src="/images/ceo.jpg"
-                    alt="Sher Zaman - CEO"
+                    alt="Mr. Zaman - CEO"
                     className="w-full max-w-md mx-auto rounded-2xl object-cover shadow-xl"
-                    title="Sher Zaman - CEO"
+                    title="Mr. Zaman - CEO"
                     loading="lazy"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement
