@@ -5,7 +5,7 @@ export default function ThreePLPage() {
   return (
     <ServiceDetailLayout
       icon={Package}
-      title="3PL Services"
+      title="Carrier Solutions"
       subtitle="Complete logistics solutions for seamless order fulfillment"
       description="Scale your e-commerce business without the headache of managing warehouses, packaging, and shipping. Our comprehensive 3PL (Third-Party Logistics) services cover everything from warehousing and inventory management to professional packaging and delivery across Europe, USA, and UK. Focus on growing your business while we handle the logistics."
       benefits={[

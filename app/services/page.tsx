@@ -12,26 +12,13 @@ const services = [
     description:
       "Build, scale, and manage your brands on leading platforms with expert strategies and hands-on support.",
     features: [
-      "Shopify, Amazon, and eBay store setup",
+      "Amazon, ebay, walmart, etsy, tiktok, shopify, custom e-commerce solutions",
       "Brand development and positioning",
       "Product listing optimization",
       "Inventory and order management",
       "Performance analytics and reporting",
     ],
     href: "/services/ecommerce",
-  },
-  {
-    icon: Store,
-    title: "Online Store Management",
-    description: "Complete end-to-end management of your online store for maximum efficiency and profitability.",
-    features: [
-      "Product uploads and categorization",
-      "Order processing and fulfillment",
-      "Customer service management",
-      "Performance optimization",
-      "Sales and conversion tracking",
-    ],
-    href: "/services/store-management",
   },
   {
     icon: Share2,
@@ -61,7 +48,7 @@ const services = [
   },
   {
     icon: Package,
-    title: "3PL Services",
+    title: "Carrier Solutions",
     description: "Complete logistics solutions for seamless order fulfillment across multiple regions.",
     features: [
       "Warehousing and storage",

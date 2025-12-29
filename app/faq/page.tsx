@@ -16,7 +16,7 @@ const faqs = [
       {
         question: "What kind of digital services do you provide?",
         answer:
-          "We offer comprehensive digital services including E-Commerce Brand Management, Online Store Management, Social Media Marketing, Website Development, 3PL Services, and SEO Optimization. Each service is tailored to meet your specific business needs and goals.",
+          "We offer comprehensive digital services including E-Commerce Brand Management, Online Store Management, Social Media Marketing, Website Development, Carrier Solutions, and SEO Optimization. Each service is tailored to meet your specific business needs and goals.",
       },
       {
         question: "What is your process for working with clients?",

@@ -53,12 +53,12 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/services/3pl" className="text-muted-foreground hover:text-primary transition-colors">
-                  3PL Services
+                  Carrier Solutions
                 </Link>
               </li>
               <li>
                 <Link href="/services/seo" className="text-muted-foreground hover:text-primary transition-colors">
-                  SEO
+                  Ecommerce
                 </Link>
               </li>
               <li>
@@ -126,9 +126,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <MapPin size={18} className="text-primary" />
-                <span>(830) 203-5261
-900 Robertson #APT 48
-Gonzales, Texas(TX), 78629</span>
+                <span>Cobblestone Point Ct, Sugar Land, TX 77498</span>
               </li>
             </ul>
           </div>

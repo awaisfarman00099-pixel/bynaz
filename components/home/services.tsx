@@ -44,10 +44,10 @@ const services = [
   },
   {
     icon: Package,
-    title: "3PL Services",
+    title: "Carrier Solutions",
     description: "Complete warehousing, packaging, and delivery solutions across Europe, USA, and UK.",
     image: "/images/25.jpg",
-    imageTitle: "3PL Services - Warehousing, Packaging & Delivery Solutions",
+    imageTitle: "Carrier Solutions - Warehousing, Packaging & Delivery Solutions",
     imageDescription: "Complete third-party logistics services including warehousing, professional packaging, shipping, delivery solutions across Europe, USA, and UK with real-time tracking.",
     href: "/services/3pl",
   },
